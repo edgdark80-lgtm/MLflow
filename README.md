@@ -34,7 +34,7 @@ pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute fuentes/entrena.ipynb     # todo el proceso
 # o por scripts:
 python fuentes/datos_prep.py && python fuentes/train.py
-mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5000
+mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5001   # luego elegir «Model training»
 ```
 Si recibe `mlflow.db`/`mlruns/` copiados de otra máquina, ejecute antes `python fuentes/reubicar_mlflow.py`.
 
