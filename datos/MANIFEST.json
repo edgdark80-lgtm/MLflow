@@ -1,0 +1,15 @@
+{
+  "version_datos": "1.1.0",
+  "fuente": "AI4I 2020 Predictive Maintenance Dataset — UCI ML Repository (id 601)",
+  "licencia": "CC BY 4.0",
+  "archivos": {
+    "datos/datos_ini/ai4i2020.csv": {
+      "sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+      "filas": 10000
+    },
+    "datos/datos_limp/ai4i2020_limpio.csv": {
+      "sha256": "430f8eb724694d428f6c3f6e1d34316b86d0d98fa565a94137e5c47977b79979",
+      "filas": 9973
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "version_datos": "1.1.0",
+  "fecha_utc": "2026-10-17T22:59:12+00:00",
+  "filas_iniciales": 10000,
+  "nulos_por_columna": {},
+  "eliminados_objetivo_nulo": 0,
+  "nulos_restantes": 0,
+  "duplicados_exactos": 0,
+  "duplicados_por_id": 0,
+  "reglas_negocio": {
+    "R1_fuera_rango_temp_aire_k": 0,
+    "R1_fuera_rango_temp_proceso_k": 0,
+    "R1_fuera_rango_vel_rotacion_rpm": 0,
+    "R1_fuera_rango_torque_nm": 0,
+    "R1_fuera_rango_desgaste_min": 0,
+    "R2_proceso_no_mayor_aire": 0,
+    "R3_falla_sin_modo": 9,
+    "R3_modo_sin_falla": 18
+  },
+  "eliminados_reglas_negocio": 27,
+  "atipicos_iqr_conservados": {
+    "vel_rotacion_rpm": {
+      "n": 418,
+      "tasa_falla_atipicos": 0.0837
+    },
+    "torque_nm": {
+      "n": 70,
+      "tasa_falla_atipicos": 0.8857
+    }
+  },
+  "filas_finales": 9973,
+  "tasa_falla_final": 0.0331,
+  "distribucion_tipo": {
+    "L": 5984,
+    "M": 2991,
+    "H": 998
+  }
+}

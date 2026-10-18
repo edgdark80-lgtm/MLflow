@@ -1,0 +1,21 @@
+{
+  "udi": "Identificador único del registro (1–10000). Solo trazabilidad, no se entrena.",
+  "id_producto": "ID de la pieza: letra de calidad + número de serie. No se entrena.",
+  "tipo": "Calidad de la pieza: L (baja, 60%), M (media, 30%), H (alta, 10%). Categórica.",
+  "temp_aire_k": "Temperatura del aire [K]. Paseo aleatorio normalizado, σ=2 K alrededor de 300 K.",
+  "temp_proceso_k": "Temperatura de proceso [K] = temp. aire + 10 K + ruido σ=1 K.",
+  "vel_rotacion_rpm": "Velocidad de rotación del husillo [rpm], derivada de una potencia de 2860 W con ruido.",
+  "torque_nm": "Par [N·m], normal con media 40 N·m y σ=10, sin valores negativos.",
+  "desgaste_min": "Minutos de uso de la herramienta; H/M/L agregan 5/3/2 min por ciclo.",
+  "falla": "OBJETIVO. 1 si la máquina falló por cualquiera de los modos (binaria).",
+  "f_desgaste_herr": "Modo TWF: reemplazo/falla por desgaste de herramienta (200–240 min). Fuga: no se entrena.",
+  "f_disipacion_calor": "Modo HDF: ΔT < 8.6 K y rpm < 1380. Fuga: no se entrena.",
+  "f_potencia": "Modo PWF: potencia < 3500 W o > 9000 W. Fuga: no se entrena.",
+  "f_sobreesfuerzo": "Modo OSF: desgaste×torque > 11000 (L), 12000 (M), 13000 (H). Fuga: no se entrena.",
+  "f_aleatoria": "Modo RNF: falla aleatoria con prob. 0.1%. Fuga: no se entrena.",
+  "delta_temp_k": "DERIVADA. temp_proceso_k − temp_aire_k [K].",
+  "potencia_w": "DERIVADA. torque_nm × rpm × 2π/60 [W].",
+  "desgaste_x_torque": "DERIVADA. desgaste_min × torque_nm [min·N·m].",
+  "atipico_iqr": "Marca 1 si rpm o torque están fuera de 1.5·IQR (informativa, no se entrena).",
+  "modo_falla": "Etiqueta textual del modo de falla para análisis exploratorio."
+}
